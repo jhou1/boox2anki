@@ -1,12 +1,12 @@
-This tool transforms vocabulary exported from Onyx boox leaf 3 for importing to anki.
+Import vocabulary from my Onyx boox leaf 3 to Anki.
 
 * Prerequisite
-- [X] Onyx boox leaf 3
-- [X] Anki with the ~Dict2Anki-v6.16(Fixed for Anki23 by Shige)~ plugin. I use this plugin to import vocabulary from Eudic
+- Vocabulary(plaintext) exported from Onyx boox leaf 3
+- Anki with the ~Dict2Anki-v6.16(Fixed for Anki23 by Shige)~ plugin. I use this plugin to import vocabulary from Eudic
 
 * Steps
-1. Export vocabulary from Onyx boox leaf 3, the export is a plaintext file, removed the first 2 lines from that file.
-2. Run `boox2anki.py` to transform the plaintext file to ~anki_import.txt~.
+1. Export vocabulary from Onyx boox leaf 3, removed the first 2 lines of the file, and rename to ~sample.txt~.
+2. Run `boox2anki.py` to generate ~anki_import.txt~ from ~sample.txt~.
 3. Import ~anki_import.txt~ to Anki, choose these options:
     - In ~Field separator~, choose ~Tab~
     - In ~Existing notes~ select ~Preserve~
@@ -15,4 +15,3 @@ This tool transforms vocabulary exported from Onyx boox leaf 3 for importing to 
         - ~term~: choose 1
         - ~definition~: choose 3
         - ~AmEPhonetic~: chhose 2
-4. Import
